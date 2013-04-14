@@ -5,7 +5,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{00DB3418-C74
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2F05A44E-FCAB-4078-A2FE-56C4480C80E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertingSorting", "src\InsertingSorting\InsertingSorting.csproj", "{E6A8BD85-5BF5-426E-B7CC-2AB50CF9825F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertionSort", "src\InsertingSorting\InsertionSort.csproj", "{E6A8BD85-5BF5-426E-B7CC-2AB50CF9825F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertionSortTest", "test\InsertionSortTest\InsertionSortTest.csproj", "{D17204E5-6BDF-4D91-99DD-217E4B74596B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,11 +19,16 @@ Global
 		{E6A8BD85-5BF5-426E-B7CC-2AB50CF9825F}.Debug|x86.Build.0 = Debug|x86
 		{E6A8BD85-5BF5-426E-B7CC-2AB50CF9825F}.Release|x86.ActiveCfg = Release|x86
 		{E6A8BD85-5BF5-426E-B7CC-2AB50CF9825F}.Release|x86.Build.0 = Release|x86
+		{D17204E5-6BDF-4D91-99DD-217E4B74596B}.Debug|x86.ActiveCfg = Debug|x86
+		{D17204E5-6BDF-4D91-99DD-217E4B74596B}.Debug|x86.Build.0 = Debug|x86
+		{D17204E5-6BDF-4D91-99DD-217E4B74596B}.Release|x86.ActiveCfg = Release|x86
+		{D17204E5-6BDF-4D91-99DD-217E4B74596B}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E6A8BD85-5BF5-426E-B7CC-2AB50CF9825F} = {00DB3418-C74D-4C37-A589-7E8EDD547AF8}
+		{D17204E5-6BDF-4D91-99DD-217E4B74596B} = {2F05A44E-FCAB-4078-A2FE-56C4480C80E3}
 	EndGlobalSection
 EndGlobal
