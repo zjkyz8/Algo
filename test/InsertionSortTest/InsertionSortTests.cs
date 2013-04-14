@@ -15,7 +15,7 @@ namespace InsertionSortTest
         }
 
         [Test]
-        public void should_return_array_with_ins_order_when_contaion_two_items_with_des_order()
+        public void should_return_array_with_asc_order_when_contaion_two_items_with_des_order()
         {
             var seq = new List<int> { 2, 1 };
 
@@ -25,7 +25,7 @@ namespace InsertionSortTest
         }
 
         [Test]
-        public void should_return_array_with_ins_order_when_contain_three_items_with_ins_order()
+        public void should_return_array_with_asc_order_when_contain_three_items_with_ins_order()
         {
             var seq = new List<int> { 2, 5, 9 };
 
@@ -35,7 +35,7 @@ namespace InsertionSortTest
         }
 
         [Test]
-        public void should_return_array_with_ins_order_when_contain_five_items_without_order()
+        public void should_return_array_with_asc_order_when_contain_five_items_without_order()
         {
             var seq = new List<int> { 2, 10, 1, 8, 4 };
 
