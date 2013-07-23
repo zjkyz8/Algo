@@ -9,16 +9,17 @@ namespace InsertionSort
         /// </summary>
         public static List<int> Sort(List<int> seqInts)
         {
-            for (int i = 0; i < seqInts.Count; i++)
+            for (int outter = 1; outter < seqInts.Count; outter++)
             {
-                var min=seqInts[i]; 
-                for (int j = i; j < seqInts.Count; j++)
+                for (int inner = outter; inner >= 1; inner--)
                 {
-                    if (seqInts[j] < min)
-                        min = seqInts[j];
-                }
-                seqInts.Remove(min);
-                seqInts.Insert(i, min);
+                    if (seqInts[inner] < seqInts[inner-1])
+                    {
+                        var temp = seqInts[inner - 1];
+                        seqInts[inner - 1] = seqInts[inner];
+                        seqInts[inner] = temp;
+                    }
+                }                
             }
             return seqInts;
         }
