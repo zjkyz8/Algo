@@ -4,17 +4,17 @@ namespace MergeSort
 {
     public class MergeSort
     {
-        public static int[] Sort(int[] seqInt, long head, long tail)
+        public static int[] Sort(int[] seqInt, long headIndex, long tailIndex)
         {
-            long arrayLength = tail - head + 1;
+            long arrayLength = tailIndex - headIndex + 1;
             var result = new int[arrayLength];
-            if (tail - head <= 0)
+            if (tailIndex - headIndex <= 0)
             {
-                Array.Copy(seqInt, head, result, 0, tail - head + 1);
+                Array.Copy(seqInt, headIndex, result, 0, tailIndex - headIndex + 1);
                 return result;
             }
-            int[] firstPart = Sort(seqInt, head, (head + tail)/2);
-            int[] secondPart = Sort(seqInt, (head + tail)/2 + 1, tail);
+            int[] firstPart = Sort(seqInt, headIndex, (headIndex + tailIndex)/2);
+            int[] secondPart = Sort(seqInt, (headIndex + tailIndex)/2 + 1, tailIndex);
 
             long firstIndex = 0, secondIndex = 0;
             for (long i = 0; i < arrayLength; i++)

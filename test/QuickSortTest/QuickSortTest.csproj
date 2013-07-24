@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B4B01F6D-27EA-47F8-A06F-DB7E5D839E63}</ProjectGuid>
+    <ProjectGuid>{7256623F-5B95-4B78-89AE-11B42748EA6C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BubbleSortTest</RootNamespace>
-    <AssemblyName>BubbleSortTest</AssemblyName>
+    <RootNamespace>QuickSortTest</RootNamespace>
+    <AssemblyName>QuickSortTest</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,10 +32,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FluentAssertions">
-      <HintPath>..\packages\FluentAssertions.2.0.1\lib\net40\FluentAssertions.dll</HintPath>
+      <HintPath>..\..\packages\FluentAssertions.2.0.1\lib\net40\FluentAssertions.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
+      <HintPath>..\..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,13 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BubbleSortTest.cs" />
+    <Compile Include="QuickSortTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BubbleSort\BubbleSort.csproj">
-      <Project>{B5E34270-44F7-41A9-9CE6-6D48E91F4C19}</Project>
-      <Name>BubbleSort</Name>
+    <ProjectReference Include="..\..\src\QuickSort\QuickSort.csproj">
+      <Project>{655D6D95-DDB5-48F5-A21A-6B6BC223D61C}</Project>
+      <Name>QuickSort</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
