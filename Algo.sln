@@ -21,8 +21,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSortTest", "test\Quick
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort", "src\QuickSort\QuickSort.csproj", "{655D6D95-DDB5-48F5-A21A-6B6BC223D61C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearch", "test\BinarySearch\BinarySearch.csproj", "{26F9589F-5DE4-4E79-B497-B3962FC52384}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearch", "src\BinarySearch\BinarySearch.csproj", "{AAECA92B-146D-4C6D-9B3A-C6E60136C723}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindromic", "Palindromic\Palindromic.csproj", "{22957416-D73A-406F-8BE4-5BBAD8C34D05}"
@@ -35,6 +33,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{ED797A
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromicTest", "test\PalindromicTest\PalindromicTest.csproj", "{8CEF834E-91C8-4685-94EB-D3BC293197C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTest", "test\BinarySearchTest\BinarySearchTest.csproj", "{26F9589F-5DE4-4E79-B497-B3962FC52384}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -126,16 +126,6 @@ Global
 		{655D6D95-DDB5-48F5-A21A-6B6BC223D61C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{655D6D95-DDB5-48F5-A21A-6B6BC223D61C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{655D6D95-DDB5-48F5-A21A-6B6BC223D61C}.Release|x86.ActiveCfg = Release|Any CPU
-		{26F9589F-5DE4-4E79-B497-B3962FC52384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{26F9589F-5DE4-4E79-B497-B3962FC52384}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{26F9589F-5DE4-4E79-B497-B3962FC52384}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{26F9589F-5DE4-4E79-B497-B3962FC52384}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{26F9589F-5DE4-4E79-B497-B3962FC52384}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{26F9589F-5DE4-4E79-B497-B3962FC52384}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{26F9589F-5DE4-4E79-B497-B3962FC52384}.Release|Any CPU.Build.0 = Release|Any CPU
-		{26F9589F-5DE4-4E79-B497-B3962FC52384}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{26F9589F-5DE4-4E79-B497-B3962FC52384}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{26F9589F-5DE4-4E79-B497-B3962FC52384}.Release|x86.ActiveCfg = Release|Any CPU
 		{AAECA92B-146D-4C6D-9B3A-C6E60136C723}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AAECA92B-146D-4C6D-9B3A-C6E60136C723}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAECA92B-146D-4C6D-9B3A-C6E60136C723}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -166,6 +156,16 @@ Global
 		{8CEF834E-91C8-4685-94EB-D3BC293197C5}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{8CEF834E-91C8-4685-94EB-D3BC293197C5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{8CEF834E-91C8-4685-94EB-D3BC293197C5}.Release|x86.ActiveCfg = Release|Any CPU
+		{26F9589F-5DE4-4E79-B497-B3962FC52384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26F9589F-5DE4-4E79-B497-B3962FC52384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26F9589F-5DE4-4E79-B497-B3962FC52384}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{26F9589F-5DE4-4E79-B497-B3962FC52384}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{26F9589F-5DE4-4E79-B497-B3962FC52384}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{26F9589F-5DE4-4E79-B497-B3962FC52384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26F9589F-5DE4-4E79-B497-B3962FC52384}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26F9589F-5DE4-4E79-B497-B3962FC52384}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{26F9589F-5DE4-4E79-B497-B3962FC52384}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{26F9589F-5DE4-4E79-B497-B3962FC52384}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -181,7 +181,7 @@ Global
 		{5114F546-9B5B-4FD9-A7F6-075810702164} = {2F05A44E-FCAB-4078-A2FE-56C4480C80E3}
 		{B4B01F6D-27EA-47F8-A06F-DB7E5D839E63} = {2F05A44E-FCAB-4078-A2FE-56C4480C80E3}
 		{7256623F-5B95-4B78-89AE-11B42748EA6C} = {2F05A44E-FCAB-4078-A2FE-56C4480C80E3}
-		{26F9589F-5DE4-4E79-B497-B3962FC52384} = {2F05A44E-FCAB-4078-A2FE-56C4480C80E3}
 		{8CEF834E-91C8-4685-94EB-D3BC293197C5} = {2F05A44E-FCAB-4078-A2FE-56C4480C80E3}
+		{26F9589F-5DE4-4E79-B497-B3962FC52384} = {2F05A44E-FCAB-4078-A2FE-56C4480C80E3}
 	EndGlobalSection
 EndGlobal
